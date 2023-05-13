@@ -10,7 +10,6 @@ html {
 }
 body {
   font-size: 1.6rem;
-
 }
 
 //* Navbar
@@ -42,8 +41,16 @@ body {
     align-items: center;
     justify-content: end;
     font-size: 1.7rem;
-    gap: 1rem;
+    gap: 1.5rem;
     margin-top: 2rem;
+    span {
+      padding: 0.5rem;
+      border-radius: 5px;
+      box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+      input {
+        margin-right: 0.5rem;
+      }
+    }
   }
   .card-wrapper {
     margin-top: 2rem;
