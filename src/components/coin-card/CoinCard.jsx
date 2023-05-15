@@ -1,3 +1,5 @@
+import "./CoinCard.scss"
+
 export default function CoinCard(coin) {
   return (
     <div key={coin.id} className="coin-card">

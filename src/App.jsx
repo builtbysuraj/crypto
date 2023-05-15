@@ -1,8 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
-import Coin from "./pages/Coin";
-import Navbar from "./components/Navbar";
-
+import Navbar from "./components/navbar/Navbar";
+import Home from "./pages/home/Home";
+import Coin from "./pages/coin/Coin";
 export default function App() {
   return (
     <BrowserRouter>

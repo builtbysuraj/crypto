@@ -1,0 +1,19 @@
+.coin-card {
+  font-size: 1.67rem;
+  border-radius: 5px;
+  width: 20rem;
+  height: 20rem;
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  img {
+    width: 100px;
+  }
+  div {
+    margin-top: 1rem;
+  }
+}

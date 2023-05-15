@@ -1,7 +1,8 @@
+import "./Coin.scss";
 import axios from "axios";
 import { useEffect, useState } from "react";
-import Loader from "../components/Loader";
-import CoinCard from "../components/CoinCard";
+import Loader from "../../components/loader/Loader";
+import CoinCard from "../../components/coin-card/CoinCard";
 
 export default function Coin() {
   const [loading, setLoading] = useState(true);
