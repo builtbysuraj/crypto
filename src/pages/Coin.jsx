@@ -7,8 +7,8 @@ export default function Coin() {
   const [loading, setLoading] = useState(true);
   const [apiData, setApiData] = useState();
   const [curr, setCurr] = useState("inr");
-  const curencyValue = curr === "inr" ? "₹" : "eur" ? "€" : "$";
-  
+  const curencyValue = curr === "inr" ? "₹" : curr === "eur" ? "€" : "$";
+
   const fetchData = async (curr) => {
     const result = await axios.get(
       `https://api.coingecko.com/api/v3/coins/markets?vs_currency=${curr}&page=1`
