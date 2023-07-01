@@ -17,12 +17,32 @@
       }
     }
   }
+  .page-wrapper {
+    display: flex;
+    overflow: auto;
+    gap: 1rem;
+    margin: 3rem 1rem;
+    .page-btn {
+      cursor: pointer;
+      padding: 10px 18px;
+      background: #000;
+      border-radius: 5px;
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: #fff;
+      border: 0;
+      margin-bottom: 0.8rem;
+      transition: all 0.2s ease-in-out;
+    }
+    :active {
+      transform: scale(0.95);
+    }
+  }
   .card-wrapper {
     margin-top: 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-
   }
 }

@@ -10,10 +10,14 @@
   flex-direction: column;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
   img {
     width: 100px;
   }
   div {
     margin-top: 1rem;
   }
+}
+.coin-card:hover {
+  transform: scale(1.1);
 }
