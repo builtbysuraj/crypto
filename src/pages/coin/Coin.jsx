@@ -85,6 +85,7 @@ export default function Coin() {
           {apiData?.map((coin) => {
             return (
               <CoinCard
+                id={coin.id}
                 key={coin.id}
                 image={coin.image}
                 symbol={coin.symbol}
