@@ -3,6 +3,7 @@
   border-radius: 5px;
   width: 20rem;
   height: 20rem;
+  padding: 1rem;
   margin: 1rem;
   display: flex;
   align-items: center;
@@ -12,12 +13,16 @@
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   img {
-    width: 100px;
+    width: 80px;
   }
   div {
     margin-top: 1rem;
   }
+  .coin-symbol {
+    font-weight: bold;
+    font-size: 2rem;
+  }
 }
 .coin-card:hover {
-  transform: scale(1.1);
+  transform: scale(1.04);
 }
