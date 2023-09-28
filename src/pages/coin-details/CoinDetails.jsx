@@ -19,7 +19,7 @@ export default function CoinDetails() {
     )
     if (!res.ok) throw new Error("Responce is not ok!")
     if (!chartRes.ok) throw new Error("Responce is not ok!")
-    
+
     const data = await res.json()
     const chartData = await chartRes.json()
 
@@ -32,12 +32,16 @@ export default function CoinDetails() {
 
   return (
     <div className="coin-details">
-      <Chart days={days} array={chartArray} currency={curencyValue} />
-      {daysBtns.map((ele) => (
-        <button onClick={() => setDays(ele)} key={ele}>
-          {ele}
-        </button>
-      ))}
+      <section className="chart">
+        <Chart days={days} array={chartArray} currency={curencyValue} />
+      </section>
+      <section className="chart-btn">
+        {daysBtns.map((ele) => (
+          <button onClick={() => setDays(ele)} key={ele}>
+            {ele}
+          </button>
+        ))}
+      </section>
       <div>
         <img src={data?.image?.large} alt="" />
       </div>

@@ -21,7 +21,6 @@ ChartJS.register(
 )
 
 export default function Chart({ array = [], currency, days }) {
-  // const days = "24h"
   const prices = []
   const date = []
 
